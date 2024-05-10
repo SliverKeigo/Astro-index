@@ -9,9 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCodeProps from 'rehype-mdx-code-props';
 import rehypeSlug from 'rehype-slug';
 import remarkToc from 'remark-toc';
-
 import sentry from '@sentry/astro';
-import pagefind from 'astro-pagefind';
 
 export default defineConfig({
   site: 'https://index.astro.sliverkeigo.top',
@@ -50,7 +48,6 @@ export default defineConfig({
     ],
   },
   integrations: [
-    pagefind(),
     mdx(),
     sitemap(),
     tailwind({
