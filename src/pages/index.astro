@@ -1,0 +1,16 @@
+---
+import { Hello } from '@/components/home/Hello';
+import { SITE_DESCRIPTION } from '@/consts';
+import DocumentMeta from '@/layouts/DocumentMeta.astro';
+---
+
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <DocumentMeta title="Hi👋" description={SITE_DESCRIPTION} />
+    <title></title>
+  </head>
+  <body>
+    <Hello client:load/>
+  </body>
+</html>
